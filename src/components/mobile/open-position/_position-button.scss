@@ -1,0 +1,25 @@
+@import '../../../App.scss';
+
+.position-button-wrapper {
+  width: 90vw;
+  height: 7.5vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  button {
+    width: inherit;
+    border: 1px solid $orange;
+    border-radius: 125px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1rem;
+    &.open-position-button {
+      color: black;
+      background: $orange;
+    }
+    &.cancel-position-button {
+      color: $orange;
+      background: black;
+    }
+  }
+}

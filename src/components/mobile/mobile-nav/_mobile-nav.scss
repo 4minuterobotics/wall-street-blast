@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Aldrich&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+// BUG: above link needed to import font
+
+.nav {
+  background: #151515;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .nav-title {
+    font-family: "Inter";
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    #text-logo,
+    .logo-title {
+      padding: 0 0.35rem;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .nav-subtitle {
+      width: 100%;
+      padding: 0 1rem;
+      align-items: center;
+      height: 100%;
+      display: flex;
+      background: #151515;
+      // .deposit {
+      // }
+    }
+
+    .bankroll {
+      font-size: 12px;
+    }
+
+    .nav-subtitle.right {
+      justify-content: flex-end;
+    }
+
+    .username {
+      color: #e95300;
+      font-size: 6px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .sub-bar {
+    height: 3vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #3d3d3d 0%, #141414 100%);
+    display: flex;
+    align-items: center;
+    color: #ff8039;
+
+    // SCROLLING MARQUEE 
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;  // IE and Edge
+    scrollbar-width: none;  // Firefox
+    &::-webkit-scrollbar {
+        display: none; // Chrome, Safari and Opera
+    }
+    
+    .donator {
+      font-family: "Aldrich", sans-serif;
+      font-size: 9px;
+      padding: 5px;
+    }
+    .space {
+      margin-left: 5vw;
+    }
+  }
+}

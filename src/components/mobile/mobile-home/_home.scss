@@ -1,0 +1,22 @@
+@import '../../../App.scss';
+
+.home-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  overflow-y: clip;
+  background: #030303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Adjust font sizes */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+  }
+
+  * {
+    font-size: 0.5625rem;
+  }
+}

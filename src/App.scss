@@ -1,0 +1,56 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aldrich&family=Inter&display=swap');
+
+// COLORS
+$background-black: #080808;
+$highlight-black: #131313;
+$module-background: #090909;
+$white: #ffffff;
+$ticker: #b4b4b4;
+$buttons: #909090;
+$stroke: #343536;
+$orange: #fe4500;
+$green: #02f354;
+$red: #f31313;
+
+// FONTS - font-families: '8bit', 'Aldrich', 'Inter'
+@font-face {
+  font-family: "8bit";
+  src: url("../src/fonts/8bit/8_bit_1_6.eot"); // IE9 Compat Modes
+  src: url("../src/fonts/8bit/8_bit_1_6.eot?#iefix") format("embedded-opentype"),
+    // IE6-IE8
+    url("../src/fonts/8bit/8_bit_1_6.woff2") format("woff2"),
+    // Modern Browsers
+    url("../src/fonts/8bit/8_bit_1_6.woff") format("woff"),
+    url("../src/fonts/8bit/8_bit_1_6.ttf") format("truetype"),
+    // Safari, Android, iOS
+    url("../src/fonts/8bit/8_bit_1_6.svg#8_bit_1_6") format(
+        "svg"
+      ); // Legacy iOS
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-size: 13px;
+  line-height: 8px;
+  color: #000000;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 115.52%; // or 21
+  color: #000000;
+}
+
+@font-face {
+  font-family: "Aldrich";
+  src: url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 115.52%; // or 21
+  color: #000000;
+}

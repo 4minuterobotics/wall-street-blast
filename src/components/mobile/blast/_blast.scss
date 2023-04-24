@@ -1,0 +1,83 @@
+@import '../../../App.scss';
+
+.green { color: $green; }
+.red { color: $red; }
+.orange { color: $orange; }
+
+.blast-wrapper {
+  width: 90vw;
+  height: 34vh;
+  border-radius: 6px;
+  background: #090909;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .round-timer-wrapper {
+    position: absolute;
+    width: inherit;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .next-round-in {
+      font-family: "8bit";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6vh;
+      line-height: 1vh;
+      text-align: center;
+      color: #ffffff;
+    }
+    .round-timer {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 7.3vh;
+      line-height: 9.24vh;
+      text-align: center;
+      letter-spacing: 0.07em;
+      display: flex;
+    }
+  }
+  .blast-multiplier-wrapper {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Abel", sans-serif;
+    .blast-multiplier {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      font-size: 0.6rem;
+    }
+    .type {
+      padding-right: 1vw;
+    }
+    .stats {
+      @extend .blast-multiplier;
+      background: $ticker;
+      border-radius: 48px;
+    }
+    .percent {
+      padding-left: 1.25vw;
+    }
+    .triangle {
+      padding-right: 1vw;
+      padding-left: 0.5vw;
+      padding-bottom: 0.5vw;
+    }
+    .multiplier {
+      padding-right: 1.5vw;
+      padding-left: 1vw;
+      color: $highlight-black;
+    }
+    .left {
+      @extend .blast-multiplier;
+      background-color: $highlight-black;
+      border-radius: 48px;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@import '../../../App.scss';
+
+.money-menu-wrapper {
+  width: 90vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.buy-stock-wrapper {
+  width: inherit;
+  height: 23vh;
+  border-radius: 6px;
+  background: $module-background; 
+}
+
+.stock-info-wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.table-header-wrapper, 
+.stock-1, .stock-2, .stock-3 {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 1fr;
+}
+
+.table-header-col {
+  font-family: '8bit', sans-serif;
+  color: #727171;
+  text-align: center;
+  margin: auto;
+}
+
+.stock-name {
+  height: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "8bit", sans-serif;
+  font-size: 9px;
+  color: $white;
+  text-align: center;
+}
+
+.stock-number {
+  &-1, &-2, &-3 {
+    &.green {color: $green}
+    &.red {color: $red;}
+    display: flex;
+    font-size: 12px;
+    font-family: "Abel", sans-serif;
+    line-height: 115.52%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #131313;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-1 {
+    color: $white;
+    border-radius: 6px 0 0 6px;
+  }
+  &-2 {
+    color: $white;
+  }
+  &-3 {
+    color: #8D8D8D;
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+.stock-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    color: black;
+    border: none;
+    border-radius: 55px;
+    font-family: '8bit', sans-serif;
+    height: 2rem;
+    font-size: 0.5625rem;
+    width: 4rem;
+    &.stock-close {
+      background: #1A1A1B;
+    }
+    &.stock-open {
+      background: $green;
+    }
+    &.stock-bust {
+      background: $red;
+    }
+    &.stock-cashed-out {
+      background: black;
+      color: $green;
+    }
+  }
+}
+
+.place-bet-wrapper {
+  // TODO: Determine what this is for or delete along with its component
+  height: 4rem;
+}
+
+.cash-flow-wrapper {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bet-display {
+  width: 45%;
+  height: 6vh;
+  border: 1px solid #343536;
+  border-radius: 4px;
+  font-family: "Aldrich", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.total-bet-input {
+  background: $white;
+  color: black;
+}
+
+.total-profit-input {
+  background: #030303;
+  color: white;
+}
+
+.totals-wrapper {
+  display: flex;
+  justify-content: space-around;
+  color: $white;
+  font-family: '8bit', sans-serif;
+  padding-top: 0.5vh;
+}
